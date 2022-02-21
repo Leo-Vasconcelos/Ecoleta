@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ecoleta</title>
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="./images/Logo.png" alt="" />
+        </div>
+        <div class="acesso">
+          <a href="./cadastro.html">
+            <img src="./images/cadastro.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <section id="home">
+      <div class="container">
+        <div class="home">
+
+          <h1>
+            Seu marketplace <br />
+            de coleta de resíduos.
+          </h1>
+          <p>
+            Ajudamos pessoas a encontrarem pontos <br />
+            de coleta de forma eficiente.
+          </p>
+          <input 
+              type="submit"
+              class="btn pesquisa"
+              value="  Pesquisar pontos de coleta">
+            <a href="/lista.html"><i class="fas fa-search"></i></a>
+          </input>
+        </div>
+   
+        <div class="desc">
+          <img src="./images/Pessoas.png" alt="" />
+        </div>
+      </div>
+      <div  class="mask-modal2">
+        <div class="box-modal2">
+         <span class="fechar">x</span>
+            <form id="pontoColeta">
+                  <h1>Pontos de Coleta</h1> 
+              <div class="cidades">
+                  <input type="text" placeholder="Digite a Cidade">
+                 <input type="text" placeholder="Digite o estado">
+              </div>
+                <a href="./lista.html" class="btn">Buscar</a>
+          </form>
+        </div>          
+    </div>
+    </section>
+      <script src="./js/script.js"></script>
+  </body>
+</html>

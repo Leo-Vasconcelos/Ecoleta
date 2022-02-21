@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecoleta</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/cadastro.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div>
+          <img src="./images/Logo.png" alt="" />
+        </div>
+        <div class="acesso">
+          <a href="./index.html"><img src="./images/Voltar.png" alt="" /></a>
+        </div>
+      </div>
+    </header>
+    <section id="cadastro-coleta">
+      <div class="container-cadastro">
+        <div>
+          <h1>
+            Cadastro do <br />
+            ponto de Coleta
+          </h1>
+        </div>
+
+        <h3>Dados da entidade</h3>
+
+        <form id="form-cadastro">
+          <div class="col-md-12">
+            <label>Nome da entidade</label>
+            <input type="text" name="Nome" required />
+          </div>
+          <div class="col-md-9">
+            <label>Endereço</label>
+            <input type="text" name="endereco" required />
+          </div>
+          <div class="col-md-3">
+            <label>Número</label>
+            <input type="text" name="numero" required />
+          </div>
+          <div class="col-md-6">
+            <label>Cidade</label>
+            <input type="text" name="cidade" required />
+          </div>
+          <div class="col-md-6">
+            <label>Estado</label>
+            <input type="text" name="estado" required />
+          </div>
+
+          <div class="texto col-md-12">
+            <h2>
+              Itens de coleta <br />
+
+              <span id="msg-erro-checkbox"> Por favor selecione pelo menos 1 item abaixo </span>
+            </h2>
+            <p>Selecione mais itens abaixo</p>
+          </div>
+          <div class="itens col-md-12">
+            <div class="flex">
+              <input type="checkbox" id="item1" name="itens-coleta" value="1" />
+              <label for="item1">
+                <img src="./images/Lampadas.png" alt="" />
+                <p>Lâmpadas</p>
+              </label>
+            </div>
+            <div class="flex">
+              <input type="checkbox" id="item2" name="itens-coleta" value="2" />
+              <label for="item2">
+                <img src="./images/Baterias.png" alt="" />
+                <p>Pilhas e <br />Baterias</p>
+              </label>
+            </div>
+            <div class="flex">
+              <input type="checkbox" id="item3" name="itens-coleta" value="3" />
+              <label for="item3">
+                <img src="./images/Papéis e Papelão.png" alt="" />
+                <p>Papéis e <br />Papelão</p>
+              </label>
+            </div>
+            <div class="flex">
+              <input type="checkbox" id="item4" name="itens-coleta" value="4" />
+              <label for="item4">
+                <img src="./images/Eletrônicos.png" alt="" />
+                <p>
+                  Residuos <br />
+                  Eletrônicos
+                </p>
+              </label>
+            </div>
+            <div class="flex">
+              <input type="checkbox" id="item5" name="itens-coleta" value="5" />
+              <label for="item5">
+                <img src="./images/Organincos.png" alt="" />
+                <p>
+                  Resíduos <br />
+                  Orgânicos
+                </p>
+              </label>
+            </div>
+            <div class="flex">
+              <input type="checkbox" id="item6" name="itens-coleta" value="6" />
+              <label for="item6">
+                <img src="./images/Óleo.png" alt="" />
+                <p>
+                  Oléo de <br />
+                  Cozinha
+                </p>
+              </label>
+            </div>
+          </div>
+          <div class="btn-cadastro col-md-12">
+            <input id="btn-modal" type="submit" class="btn" value=" Cadastrar ponto de coleta" />
+          </div>
+        </form>
+      </div>
+      <div id="modal" class="mask-modal">
+        <div class="box-modal">
+          <img src="./images/Concluído!.png" alt="" />
+
+          <p>Cadastro concluído!</p>
+          <a class="btn" href="./index.html">Fechar</a>
+        </div>
+      </div>
+    </section>
+    <script src="./js/cadastro.js"></script>
+  </body>
+</html>

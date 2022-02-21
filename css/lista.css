@@ -1,0 +1,72 @@
+#pontos {
+  margin-top: 4rem;
+}
+.box-resultados {
+  background: #f0f0f5;
+}
+p {
+  color: #322153;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  font-family: "Ubuntu-Regular";
+}
+.box-prod-flex {
+  display: flex;
+  margin: -110px -15px 0 -15px;
+}
+@keyframes prodflex {
+  from {
+    opacity: 0;
+    margin-right: -150px;
+  }
+  to {
+    opacity: 1;
+    margin-right: 0;
+  }
+}
+.box-prod-flex {
+  opacity: 1;
+  animation: prodflex 1.4s normal forwards ease-in-out;
+}
+.box-prod {
+  width: 33.3333%;
+  padding: 0 15px;
+}
+.box-prod h1 {
+  font-family: "Ubuntu-Bold";
+  color: #322153;
+  margin: 1.5rem 0;
+}
+.box-prod h3 {
+  color: #34cb79;
+  font-family: "Ubuntu-Regular";
+}
+.box-prod p {
+  padding: 1.5rem 0;
+  color: #6c6c80;
+}
+.fotos {
+  display: flex;
+}
+
+/*reponsivo*/
+
+@media only screen and (max-width: 757px) {
+  .box-prod-flex {
+    flex-direction: column;
+  }
+  #pontos {
+    background: #f0f0f5;
+  }
+  .box-prod {
+    width: 100%;
+    background: #f0f0f5;
+    margin-top: 2rem;
+  }
+  .box-prod h1 {
+    margin: 0.9rem 0;
+  }
+  p {
+    padding-bottom: 8rem;
+  }
+}
